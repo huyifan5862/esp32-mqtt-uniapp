@@ -1,0 +1,25 @@
+spring:
+  mqtt:
+    enable: true
+    url: tcp://114.115.220.157:1883
+    username:
+    password:
+    #MQTT-??????????ID
+    #?????????????????????clientid????id????????clientid?????Lost connection: ?????; retrying...
+    consumerclientid: springboot-esp32-mqtt-c
+    producerclientid: springboot-esp32-mqtt-p
+    #???????ms
+    timeout: 5000
+    #1.5*Keep Alive ????????????
+    keepalive: 2
+    # deviceId
+    #deviceId: your_deviceId
+    # mqtt-topic
+    producertopic: test1
+    consumertopic: /test
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/mysql
+#    username: root
+#    password: root
+#    driver-class-name: org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy
