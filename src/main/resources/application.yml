@@ -1,3 +1,5 @@
+server:
+  port: 8081
 spring:
   mqtt:
     enable: true
@@ -18,7 +20,7 @@ spring:
     producertopic: test1
     consumertopic: /test
   datasource:
-    url: jdbc:mysql://114.115.220.157:3306/mysql
+    url: jdbc:mysql://114.115.220.157:3306/mqtt
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver

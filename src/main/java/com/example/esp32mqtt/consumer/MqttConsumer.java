@@ -50,4 +50,7 @@ public class MqttConsumer implements MessageHandler {
         System.out.println(testMapper.selOne());
         logger.info("接收到 mqtt消息，主题:{} 消息:{}", topic, payload);
     }
+
+
+
 }
